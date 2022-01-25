@@ -1,6 +1,8 @@
+package algorithm.section.string;
+
 import java.util.Scanner;
 
-public class Main {
+public class 대소문자_변환_02 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

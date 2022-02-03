@@ -1,7 +1,8 @@
+package algorithm.section.array;
+
 import java.util.Scanner;
 
-public class Main {
-
+public class 가위_바위_보_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -35,5 +36,4 @@ public class Main {
         else
             return "A";
     }
-
 }

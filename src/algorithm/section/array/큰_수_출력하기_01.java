@@ -16,7 +16,6 @@ public class 큰_수_출력하기_01 {
         for (Integer result : results) {
             System.out.print(result + " ");
         }
-//        System.out.println(results);
     }
 
     static List<Integer> solution(int[] arr) {

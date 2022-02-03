@@ -1,7 +1,8 @@
+package algorithm.section.array;
+
 import java.util.Scanner;
 
-public class Main {
-
+public class 보이는_학생_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int c = scanner.nextInt();
@@ -25,5 +26,4 @@ public class Main {
 
         return result;
     }
-
 }

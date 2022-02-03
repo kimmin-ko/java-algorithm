@@ -4,25 +4,29 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        StringBuilder sb = new StringBuilder();
-
-        int count = scanner.nextInt();
-        scanner.nextLine();
-
-        for (int i = 0; i < count; i++)
-            sb.append(solution(scanner.nextLine())).append("\n");
-
-        System.out.println(sb);
+        System.out.println(solution(scanner.nextLine()));
     }
 
     static String solution(String str) {
-        StringBuilder sb = new StringBuilder();
+        char[] chars = str.toCharArray();
 
-        for (int i = str.length() - 1; i >= 0; i--)
-            sb.append(str.charAt(i));
+        int lt = 0;
+        int rt = chars.length - 1;
+        while (lt < rt) {
+            if (Character.isAlphabetic(chars[lt]) && Character.isAlphabetic(chars[rt])) {
+                char tmp = chars[lt];
+                chars[lt] = chars[rt];
+                chars[rt] = tmp;
+                lt++;
+                rt--;
+            } else if (!Character.isAlphabetic(chars[lt])) {
+                lt++;
+            } else if (!Character.isAlphabetic(chars[rt])) {
+                rt--;
+            }
+        }
 
-        return sb.toString();
+        return String.valueOf(chars);
     }
 
 }

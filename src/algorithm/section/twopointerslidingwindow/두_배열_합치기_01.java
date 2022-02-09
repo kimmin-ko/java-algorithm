@@ -1,8 +1,10 @@
+package algorithm.section.twopointerslidingwindow;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class 두_배열_합치기_01 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

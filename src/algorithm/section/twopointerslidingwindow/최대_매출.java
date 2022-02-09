@@ -1,6 +1,8 @@
+package algorithm.section.twopointerslidingwindow;
+
 import java.util.Scanner;
 
-public class Main {
+public class 최대_매출 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

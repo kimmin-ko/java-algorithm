@@ -28,28 +28,21 @@ public class 두_배열_합치기_01 {
     static List<Integer> solution(int[] a, int[] b) {
         List<Integer> answers = new ArrayList<>();
 
-        int aIdx = 0;
-        int bIdx = 0;
+        int p1 = 0;
+        int p2 = 0;
 
-        while (aIdx < a.length && bIdx < b.length) {
-            if (a[aIdx] <= b[bIdx]) {
-                answers.add(a[aIdx]);
-                aIdx++;
-            } else {
-                answers.add(b[bIdx]);
-                bIdx++;
-            }
+        while (p1 < a.length && p2 < b.length) {
+            if (a[p1] <= b[p2])
+                answers.add(a[p1++]);
+            else
+                answers.add(b[p2++]);
         }
 
-        if (aIdx != a.length) {
-            for (int i = aIdx; i < a.length; i++) {
-                answers.add(a[i]);
-            }
-        } else {
-            for (int i = bIdx; i < b.length; i++) {
-                answers.add(b[i]);
-            }
-        }
+        while (p1 < a.length)
+            answers.add(a[p1++]);
+
+        while (p2 < b.length)
+            answers.add(b[p2++]);
 
         return answers;
     }

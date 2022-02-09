@@ -1,9 +1,11 @@
+package algorithm.section.twopointerslidingwindow;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class 공통원소_구하기 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -21,8 +23,25 @@ public class Main {
     }
 
     static List<Integer> solution(int[] a, int[] b) {
+        List<Integer> answers = new ArrayList<>();
+        Arrays.sort(a);
+        Arrays.sort(b);
 
-        return null;
+        int p1 = 0;
+        int p2 = 0;
+
+        while (p1 < a.length && p2 < b.length) {
+            if (a[p1] == b[p2]) {
+                answers.add(a[p1]);
+                p1++;
+                p2++;
+            } else if (a[p1] < b[p2])
+                p1++;
+            else
+                p2++;
+        }
+
+        return answers;
     }
 
 }

@@ -3,31 +3,34 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
 
-        int n = scanner.nextInt();
-        int k = scanner.nextInt();
+        int n = s.nextInt();
+        int m = s.nextInt();
 
         int[] a = new int[n];
-        for (int i = 0; i < n; i++) {
-            a[i] = scanner.nextInt();
-        }
+        for (int i = 0; i < n; i++)
+            a[i] = s.nextInt();
 
-        int solution = solution(a, k);
+        int solution = solution(a, m);
         System.out.println(solution);
     }
 
-    static int solution(int[] a, int k) {
+    static int solution(int[] a, int m) {
         int answer = 0;
 
-        for (int i = 0; i < k; i++)
-            answer += a[i];
+        int sum = 0;
+        int lt = 0;
+        for (int rt = 0; rt < a.length; rt++) {
+            sum += a[rt];
+            if (sum == m)
+                answer++;
 
-        int sum = answer;
-        for (int i = 0, j = k; j < a.length; i++, j++) {
-            sum = sum - a[i] + a[j];
-            if (answer < sum)
-                answer = sum;
+            while (sum >= m) {
+                sum -= a[lt++];
+                if (sum == m)
+                    answer++;
+            }
         }
 
         return answer;

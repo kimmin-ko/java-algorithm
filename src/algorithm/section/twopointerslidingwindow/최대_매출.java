@@ -27,9 +27,8 @@ public class 최대_매출 {
 
         int sum = answer;
         for (int i = 0, j = k; j < a.length; i++, j++) {
-            sum = sum - a[i] + a[j];
-            if (answer < sum)
-                answer = sum;
+            sum += a[j] - a[i];
+            answer = Math.max(answer, sum);
         }
 
         return answer;

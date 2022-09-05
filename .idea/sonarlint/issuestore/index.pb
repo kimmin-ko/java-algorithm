@@ -16,13 +16,9 @@ G.idea/sonarlint/issuestore/f/a/fa75e75cdcbcdff2b0010bc7325ef5a408f526cd,4/a/4a
 j
 :src/algorithm/leetcode/array/ProductOfArrayExceptSelf.java,a/7/a7f9c4d21b38791c2084d0501ffb60cbe4ee1148
 w
-G.idea/sonarlint/issuestore/8/e/8e3d5572111947a6fc62da316a319faf3e927047,9/8/98cdda3e00c24ac72814f7f2d393d547a1eae62b
-w
 G.idea/sonarlint/issuestore/4/a/4adbee48e94ce3d954851e1fc9938279b95c37bd,c/a/ca7fe37c74566a83dbdca3251cbec30a5b3b1276
 w
 G.idea/sonarlint/issuestore/9/8/98cdda3e00c24ac72814f7f2d393d547a1eae62b,0/d/0d28653d051caac2a22e9fa58452afea58a3fe38
-w
-G.idea/sonarlint/issuestore/5/6/562a96f4b510eab0c6e571d81bf1c9baba1a636a,3/c/3c7d5980b346c8b1689f710ecb13e83ad9c36ffd
 w
 G.idea/sonarlint/issuestore/c/a/ca7fe37c74566a83dbdca3251cbec30a5b3b1276,6/7/67dd868a260887177977169a7d5d84c009f30daa
 h
@@ -60,3 +56,7 @@ h
 8src/algorithm/leetcode/array/ContainerWithMostWater.java,8/7/87327044718741d9b0d3705b67f0e1e4a9e3127a
 m
 =test/algorithm/leetcode/array/ContainerWithMostWaterTest.java,4/e/4e8b351ffe806dad322a6338bd47e520e6e588a6
+e
+5test/algorithm/leetcode/binary/NumberOf1BitsTest.java,e/e/ee9d681e77b22aaee3c47b2ad7fa21248d15ba5a
+`
+0src/algorithm/leetcode/binary/NumberOf1Bits.java,1/f/1fa1b4aa87aea791aff313ed531b7124ce89de48

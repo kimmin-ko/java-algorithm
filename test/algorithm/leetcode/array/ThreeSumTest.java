@@ -1,5 +1,6 @@
 package algorithm.leetcode.array;
 
+import algorithm.leetcode.algorithm.array.ThreeSum;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

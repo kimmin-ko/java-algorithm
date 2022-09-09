@@ -1,4 +1,4 @@
-package algorithm.leetcode.array;
+package algorithm.leetcode.algorithm.array;
 
 public class ContainerWithMostWater {
 

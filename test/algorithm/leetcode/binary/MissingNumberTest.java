@@ -1,5 +1,6 @@
 package algorithm.leetcode.binary;
 
+import algorithm.leetcode.algorithm.binary.MissingNumber;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

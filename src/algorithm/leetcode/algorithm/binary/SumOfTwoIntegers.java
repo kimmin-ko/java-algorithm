@@ -1,4 +1,4 @@
-package algorithm.leetcode.binary;
+package algorithm.leetcode.algorithm.binary;
 
 public class SumOfTwoIntegers {
 

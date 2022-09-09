@@ -1,5 +1,6 @@
 package algorithm.leetcode.array;
 
+import algorithm.leetcode.algorithm.array.SearchInRotatedSortedArray;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;

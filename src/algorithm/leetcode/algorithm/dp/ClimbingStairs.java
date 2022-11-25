@@ -7,10 +7,10 @@ import java.util.Set;
 
 public class ClimbingStairs {
 
+    // top down
     List<Integer> list = new ArrayList<>();
     Set<Integer> flag = new HashSet<>();
 
-    // top down
     public int climbStairs(int n) {
         if (n < 0) {
             return 0;

@@ -7,7 +7,7 @@ public class PrintInOrder {
     private final Semaphore run2 = new Semaphore(0);
     private final Semaphore run3 = new Semaphore(0);
 
-    public void first(Runnable printFirst) throws InterruptedException {
+    public void first(Runnable printFirst) {
         printFirst.run();
         run2.release();
     }

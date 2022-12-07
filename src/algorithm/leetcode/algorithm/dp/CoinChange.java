@@ -12,6 +12,7 @@ public class CoinChange {
         System.out.println("answer1 = " + answer1);
     }
 
+    // bottom up
     public int coinChange(int[] coins, int amount) {
         int[] m = new int[amount + 1];
         m[0] = 0;
@@ -31,9 +32,6 @@ public class CoinChange {
     private int getMinimumCoin(int[] coins, int[] m, int n) {
         int min = Integer.MAX_VALUE;
         for (int coin : coins) {
-            // 1 - 2 >= 0 ? false
-            // memoryValue = -1
-            // min = 21억
             int memoryValue = n - coin >= 0 ? m[n - coin] : -1;
             if (memoryValue < min && memoryValue >= 0) {
                 min = memoryValue;

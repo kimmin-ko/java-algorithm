@@ -49,49 +49,4 @@ public class RemoveLinkedListElements {
 
         return head;
     }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        ListNode remove(int val) {
-            ListNode head = this;
-            while (head != null) {
-                if (head.val == val) {
-                    head = head.next;
-                    continue;
-                }
-
-                break;
-            }
-
-            if (head == null) {
-                return null;
-            }
-
-            ListNode n = head;
-            while (n.next != null) {
-                if (n.next.val == val) {
-                    n.next = n.next.next;
-                    continue;
-                }
-
-                n = n.next;
-            }
-
-            return head;
-        }
-    }
 }

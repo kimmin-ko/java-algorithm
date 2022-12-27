@@ -3,23 +3,21 @@ package cracking.interview.arrays_and_string;
 import java.util.Arrays;
 import java.util.HashSet;
 
-public class Q_1_1 {
+public class Q1 {
 
     public static void main(String[] args) {
-        Q_1_1 q = new Q_1_1();
-
-        boolean r1 = q.isUniqueCharsForAscii("Aabcdz");
+        boolean r1 = isUniqueCharsForAscii("Aabcdz");
         System.out.println(r1);
 
-        boolean r2 = q.isUniqueChars("안녕하세요. 안");
+        boolean r2 = isUniqueChars("안녕하세요. 안");
         System.out.println(r2);
 
-        boolean r3 = q.isUniqueCharsNoDataStructure("안녕하세요");
+        boolean r3 = isUniqueCharsNoDataStructure("안녕하세요");
         System.out.println(r3);
     }
 
     // 입력 값이 ASCII 코드일 경우
-    boolean isUniqueCharsForAscii(String str) {
+    static boolean isUniqueCharsForAscii(String str) {
         if (str.length() > 128) {
             return false;
         }
@@ -35,7 +33,7 @@ public class Q_1_1 {
     }
 
     // 입력 값이 유니코드일 경우
-    boolean isUniqueChars(String str) {
+    static boolean isUniqueChars(String str) {
         HashSet<Character> chars = new HashSet<>(str.length());
         for (char c : str.toCharArray()) {
             if (chars.contains(c)) {
@@ -48,7 +46,7 @@ public class Q_1_1 {
 
     // 브루트포스를 사용할 경우 O(n^2)
     // 입력 값을 정렬할 수 있고 자료구조를 사용하지 않을 경우 O(n log(n))
-    boolean isUniqueCharsNoDataStructure(String str) {
+    static boolean isUniqueCharsNoDataStructure(String str) {
         char[] sortedChars = str.toCharArray();
         Arrays.sort(sortedChars);
 

@@ -68,5 +68,3 @@ a
 +src/data_structure/linked_list/v1/Node.java,7/0/70767b3fee8627ac5c5dd2b15b6516e0f4f12997
 G
 src/algorithm/Exam.java,e/6/e6a8bdcd16fb682ba2a7098d6e5e27c4530e37bb
-[
-+src/cracking/interview/linkedlist/Node.java,9/d/9d1ec9ce0d5119cf0dc183eb9202f31ff0aa6a80

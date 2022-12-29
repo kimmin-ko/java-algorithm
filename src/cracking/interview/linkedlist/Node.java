@@ -17,4 +17,23 @@ public class Node {
         }
         n.next = end;
     }
+
+    void retrieve() {
+        Node n = this;
+        while (n != null) {
+            System.out.print(n.data + ", ");
+            n = n.next;
+        }
+    }
+
+    public Node get(int data) {
+        Node n = this;
+        while (n != null) {
+            if (n.data == data) {
+                return n;
+            }
+            n = n.next;
+        }
+        return null;
+    }
 }

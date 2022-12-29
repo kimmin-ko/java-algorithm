@@ -16,7 +16,7 @@ public class Q2 {
         System.out.println(kThFromLastRecur(head, 3, new Reference(0)).data);
     }
 
-    static class Reference {
+    private static class Reference {
         int count;
 
         public Reference(int count) {

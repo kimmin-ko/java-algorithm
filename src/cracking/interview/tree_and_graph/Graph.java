@@ -1,6 +1,5 @@
 package cracking.interview.tree_and_graph;
 
-import java.sql.Array;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.LinkedList;
@@ -110,7 +109,6 @@ public class Graph {
                 }
             }
         }
-
         return false;
     }
 

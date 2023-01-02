@@ -75,15 +75,7 @@ Y
 Y
 )src/cracking/interview/linkedlist/Q3.java,d/e/de16ba3d77490e002a8714042493fd76f37121cb
 k
-;src/cracking/interview/stack_and_queue/FixedMultiStack.java,b/a/ba4334ac60b6539f9f384b92405816f3568caf45
-n
->src/cracking/interview/stack_and_queue/FullStackException.java,1/6/16744458ebcade7b0f72c1d68f31f6e7a523a8e6
-f
-6src/cracking/interview/stack_and_queue/MultiStack.java,d/4/d439f1fe9713d9a9bd3a062f008b091c371fd514
-k
 ;test/cracking/interview/stack_and_queue/MultiStackTest.java,e/1/e17ec19acdb479fe148b62bfc11204b4869f4665
-a
-1src/cracking/interview/stack_and_queue/Stack.java,5/4/541ae2b2fcda7790ac228d60c0336fe8f3319ca2
 i
 9src/algorithm/leetcode/algorithm/string/RotateString.java,e/d/ed6c2d9874afdb507303f718ac0346a2598fac3d
 †

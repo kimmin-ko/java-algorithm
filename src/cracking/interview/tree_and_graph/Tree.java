@@ -1,5 +1,8 @@
 package cracking.interview.tree_and_graph;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 public class Tree {
 
     static class Node {
@@ -53,11 +56,43 @@ public class Tree {
         this.root = makeBinarySearchTree(sortedArr);
     }
 
-    public Node makeBinarySearchTree(int[] sortedArray) {
+    public ArrayList<LinkedList<Node>> bstToList() {
+        ArrayList<LinkedList<Node>> results = new ArrayList<>();
+        LinkedList<Node> current = new LinkedList<>();
+        if (root != null) {
+            current.add(root);
+        }
+
+        while (!current.isEmpty()) {
+            results.add(current);
+            LinkedList<Node> parents = current;
+            current = new LinkedList<>();
+            for (Node parent : parents) {
+                if (parent.left != null) {
+                    current.add(parent.left);
+                }
+                if (parent.right != null) {
+                    current.add(parent.right);
+                }
+            }
+        }
+        return results;
+    }
+
+    public void printList(ArrayList<LinkedList<Node>> lists) {
+        for (LinkedList<Node> list : lists) {
+            for (Node node : list) {
+                System.out.print(node.data + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // private //
+    private Node makeBinarySearchTree(int[] sortedArray) {
         if (sortedArray == null || sortedArray.length == 0) {
             return null;
         }
-
         return makeBinarySearchTree(sortedArray, 0, sortedArray.length - 1);
     }
 
@@ -73,7 +108,6 @@ public class Tree {
         return node;
     }
 
-    // private //
     private Node makeBinarySearchTree(int start, int end) {
         if (start > end) {
             return null;

@@ -49,6 +49,30 @@ public class Tree {
         return totalPaths;
     }
 
+    public Tree(int[] sortedArr) {
+        this.root = makeBinarySearchTree(sortedArr);
+    }
+
+    public Node makeBinarySearchTree(int[] sortedArray) {
+        if (sortedArray == null || sortedArray.length == 0) {
+            return null;
+        }
+
+        return makeBinarySearchTree(sortedArray, 0, sortedArray.length - 1);
+    }
+
+    private Node makeBinarySearchTree(int[] sortedArray, int start, int end) {
+        if (start > end) {
+            return null;
+        }
+
+        int mid = (start + end) / 2;
+        Node node = new Node(sortedArray[mid]);
+        node.left = makeBinarySearchTree(sortedArray, start, mid - 1);
+        node.right = makeBinarySearchTree(sortedArray, mid + 1, end);
+        return node;
+    }
+
     // private //
     private Node makeBinarySearchTree(int start, int end) {
         if (start > end) {

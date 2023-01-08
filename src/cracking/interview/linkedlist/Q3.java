@@ -9,8 +9,7 @@ public class Q3 {
         head.append(4);
         head.append(5);
 
-//        deleteMiddleNode(head);
-        deleteNode(head.get(2));
+        deleteNode(head.get(3));
         head.retrieve();
     }
 
@@ -23,23 +22,6 @@ public class Q3 {
         node.data = next.data;
         node.next = next.next;
         return true;
-    }
-
-    private static void deleteMiddleNode(Node head) {
-        if (head == null || head.next == null) {
-            return;
-        }
-        Node prev = head;
-        Node slow = head;
-        Node fast = head;
-
-        while (fast != null && fast.next != null) {
-            prev = slow;
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-
-        prev.next = slow.next;
     }
 
 }

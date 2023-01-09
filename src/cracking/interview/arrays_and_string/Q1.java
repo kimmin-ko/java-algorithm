@@ -49,7 +49,7 @@ public class Q1 {
     }
 
     // 입력 값을 정렬할 수 있고 자료구조를 사용하지 않을 경우
-    // 시간 복잡도: O(n log(n))
+    // 시간 복잡도: O(n log(n))-> n log n
     // 공간 복잡도: O(n)
     static boolean isUniqueCharsNoDataStructure(String str) {
         // 자료구조를 사용하진 않았지만 정렬하기 위한 추가적인 공간이 필요하다.

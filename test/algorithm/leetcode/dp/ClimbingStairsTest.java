@@ -1,6 +1,5 @@
 package algorithm.leetcode.dp;
 
-import algorithm.leetcode.algorithm.dp.ClimbingStairs;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
